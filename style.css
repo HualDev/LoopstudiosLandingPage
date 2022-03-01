@@ -1,7 +1,8 @@
 :root{
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
-    --darkGray: hsl(0, 0%, 55%);--veryDarkGray: hsl(0, 0%, 41%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%);
 }
 
 *{
@@ -15,7 +16,7 @@ body{
 }
 
 main{
-   font-family: 'Josefin Sans', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif; 
 }
 
 header{
@@ -23,7 +24,7 @@ header{
     padding: 2rem 1.5rem 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 41rem;
+    height: 40rem;
 }
 
 nav{
@@ -46,9 +47,155 @@ nav{
     color: white;
     width: 20rem;
     font-size: 1.2rem;
-    padding: 0 1.5rem;   
+    padding: 0 1.5rem;      
 }
 
 .title h1{
     text-transform: uppercase;
+}
+
+.interactiveImage{
+    margin: 6.5rem auto 0;
+    width:80%;
+}
+
+.interactiveImage img{
+    width: 100%;
+}
+
+.resume{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.resume h1{    
+    text-transform: uppercase;    
+    font-size: 2.0rem;
+}
+
+.resume p{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+    margin: auto;
+    font-weight: 700;
+    color: var(--darkGray);
+}
+
+.creations{
+    display: grid;
+}
+
+.creations button{
+    grid-row: 3;
+    grid-column: 1;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: transparent;
+    text-align: center;
+    display: block;
+    margin: 1.2rem auto 6rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border: solid 0.15rem black;
+}
+
+.creations h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.7;
+    margin: 6rem auto 3rem;
+    
+}
+
+.images{
+    width: 90%;
+    margin: 0 auto 1rem;
+    height: 9rem;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;    
+    background-size: cover;   
+}
+
+.images h2{
+    text-transform: uppercase;
+    width: 10rem;       
+    color: white;
+    opacity: 0.9;
+    padding: 0 0 0.5rem 1.5rem;
+}
+
+.earth{
+    background-image: url('./images/mobile/image-deep-earth.jpg');
+}
+
+.arcade{
+    background-image: url('./images/mobile/image-night-arcade.jpg');
+}
+
+.soccer{
+    background-image: url('./images/mobile/image-soccer-team.jpg');
+}
+
+.grid{
+    background-image: url('./images/mobile/image-grid.jpg');    
+}
+
+.grid h2{
+    width: 8rem;
+}
+
+.above{
+    background-image: url('./images/mobile/image-from-above.jpg');
+}
+
+.pocket{
+    background-image: url('./images/mobile/image-pocket-borealis.jpg');
+}
+
+.curiosity{
+    background-image: url('./images/mobile/image-curiosity.jpg');
+}
+
+.fishEye{
+    background-image: url('./images/mobile/image-fisheye.jpg');
+}
+
+footer{
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 4rem 0;
+}
+
+.footerLogo{
+    width: 40%;
+}
+
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;   
+}
+
+.footerMenu a{
+    text-decoration: none;
+    color: white;
+    
+    line-height: 3;
+}
+
+.social a{
+    text-decoration: none;
+    margin: 0 0.8rem 0 0;
+}
+
+footer h3{
+    margin: 3rem auto;
 }
